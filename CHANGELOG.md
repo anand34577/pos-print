@@ -2,10 +2,13 @@
 
 All notable changes to this project are listed here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [Unreleased]
+## [0.1.1] - 2026-11-07
 
 ### Changed
 - Tagged releases now build a signed APK in CI and attach it to the GitHub release.
+
+### Fixed
+- CI failed on Linux because the Gradle wrapper was not executable.
 
 ## [0.1.0] - 2026-11-05
 
