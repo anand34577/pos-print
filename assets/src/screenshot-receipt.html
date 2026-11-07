@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;width:1440px;height:900px;overflow:hidden}
+body{font-family:Inter,sans-serif;background:radial-gradient(900px 600px at 80% 0,#cfe9e9,transparent 70%),#eef4f4;display:flex;align-items:center;justify-content:center;gap:90px;color:#161D1D}
+.phone{width:380px;height:780px;background:#fbfdfd;border-radius:44px;border:10px solid #1b2425;box-shadow:0 40px 80px rgba(14,20,21,.28);overflow:hidden;position:relative}
+.bar{background:#fbfdfd;padding:26px 22px 12px;font-size:22px;font-weight:700}
+.sub{padding:0 22px;color:#5b6b6b;font-size:13px}
+.blk{margin:10px 16px;background:#fff;border:1px solid #d8e3e3;border-radius:14px;padding:12px 14px;font-size:14px}
+.blk b{display:block;font-size:11px;letter-spacing:.06em;color:#00696B;text-transform:uppercase;margin-bottom:4px}
+.chip{display:inline-block;background:#d9f0f0;color:#00494b;border-radius:8px;padding:2px 8px;font-size:12px;margin-right:4px}
+.fab{position:absolute;right:20px;bottom:24px;background:#00696B;color:#fff;border-radius:18px;padding:16px 22px;font-weight:700;font-size:15px}
+.paper{width:300px;background:#fff;font-family:'JetBrains Mono',monospace;font-size:13px;padding:24px 20px;line-height:1.6;box-shadow:0 30px 60px rgba(14,20,21,.22);border-radius:2px}
+.c{text-align:center}.r{display:flex;justify-content:space-between}hr{border:0;border-top:1px dashed #9aa;margin:8px 0}
+h2{font-size:15px;color:#5b6b6b;font-weight:500;margin:0 0 12px;text-align:center}
+</style></head><body>
+<div class="phone"><div class="bar">Edit template</div><div class="sub">Retail receipt · 80 mm</div>
+<div class="blk"><b>Header</b>{{business.name}} <span class="chip">bold</span><span class="chip">center</span></div>
+<div class="blk"><b>Text</b>Order #{{order}}   {{date}}</div>
+<div class="blk"><b>Table · items</b>name · qty · total</div>
+<div class="blk"><b>Text · show only if</b>discount &gt; 0<br>Discount  -{{discount|money}}</div>
+<div class="blk"><b>Totals</b>TOTAL  {{total|money}}</div>
+<div class="blk"><b>QR code</b>https://pay.bluefinhardware.example/o/{{order}}</div>
+<div class="fab">Print</div></div>
+<div><h2>Live preview</h2><div class="paper"><div class="c"><b>Bluefin Hardware</b></div><div class="c">212 Quay Road, Bristol</div><hr>
+<div class="r"><span>Order #3817</span><span>06 Nov 2026</span></div><hr>
+<div class="r"><span>2 x Wood screws 50pk</span><span>11.80</span></div><div class="r"><span>1 x Cordless drill</span><span>64.00</span></div><div class="r"><span>1 x Masking tape</span><span>3.40</span></div><hr>
+<div class="r"><span>Discount</span><span>-5.00</span></div><div class="r"><b>TOTAL</b><b>£74.20</b></div><hr><div class="c">Thank you</div></div></div>
+</body></html>

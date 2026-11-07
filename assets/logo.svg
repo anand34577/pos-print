@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="POS Print logo">
+  <rect width="128" height="128" rx="28" fill="#00696B"/>
+  <path d="M36 20h56v76l-9.3-7-9.4 7-9.3-7-9.4 7-9.3-7-9.3 7z" fill="#F4FAFA"/>
+  <rect x="48" y="36" width="32" height="6" rx="3" fill="#00696B"/>
+  <rect x="48" y="52" width="32" height="6" rx="3" fill="#80D4D6"/>
+  <rect x="48" y="68" width="20" height="6" rx="3" fill="#80D4D6"/>
+</svg>
